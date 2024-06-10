@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner-container {
+    /* background-image: url(/assest/background\ img.jpg); */
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.nav-blue {
+    height: 50px;
+    background-color: rgb(18, 18, 67);
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+
+.nav-icon {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.cart{
+    position: relative;
+}
+.inner {
+    height: 15px;
+    width: 15px;
+    font-size: small;
+    background-color: rgb(236, 204, 77) ;
+    border-radius: 50px ;
+    color: #ffff;
+    position: absolute;
+    left: 15px;
+    top: -4px;
+}
+.info-icon {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.info-icon :hover {
+    cursor: pointer;
+}
+
+.logo-nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    color: rgb(39, 39, 113);
+    align-items: center;
+    justify-content: space-around;
+    font-family: sans-serif;
+    border-bottom: 1px solid rgb(96, 95, 95);
+}
+
+.logo {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40px;
+    gap: 10px;
+}
+
+.contact-bar {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(51, 51, 129);
+    background-color: rgb(230, 191, 34);
+    border-radius: 5px;
+    border: none;
+}
+
+.button :hover {
+    cursor: pointer;
+    font-weight: 600;
+    background-color: rgb(51, 51, 129);
+    color: #ffff;
+
+}
+
+.navbar {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    color: rgb(51, 51, 129);
+    font-family: sans-serif;
+    font-weight: 550;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 50px;
+}
+
+
+.nav-list {
+    width: 70%;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+
+.list :hover {
+    color: rgb(230, 191, 34);
+    /* border-bottom: 1px solid rgb(230, 191, 34); */
+    cursor: pointer;
+}
+
+.icon-box {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    /* margin: auto; */
+    gap: 15px
+}
+
+.icon-box :hover {
+    cursor: pointer;
+}
+
+.img-container {
+    background-image: url(/Assest/edu.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.heading {
+    width: 400px;
+    height: 400px;
+    gap: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 50px;
+    flex-direction: column;
+    color: #ffff;
+    font-size: large;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.img-button {
+    display: flex;
+    gap: 20px;
+}
+
+.img-button :hover {
+    cursor: pointer;
+    font-weight: 600;
+    background-color: rgb(51, 51, 129);
+    color: #ffff;
+}
+
+.last-container {
+    height: 200px;
+    align-items: center;
+    width: 70%;
+    background-color: rgb(18, 18, 67);
+    border-radius: 10px;
+    margin: -120px 200px 0 200px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.last-heading {
+    width: 30%;
+    color: #ffff;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.box {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: #ffff;
+}
+
+.box-1 {
+    height: 120px;
+    width: 120px;
+    background-color: rgb(126, 126, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    gap: 15px;
+}
+
+.box-1:hover{
+background-color:rgb(80, 80, 248);
+}
+.box:hover {
+    cursor: pointer;
+}
+
+.box-2 {
+    height: 120px;
+    width: 120px;
+    background-color: rgb(145, 176, 81);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    gap: 15px;
+}
+.box-2:hover{
+    background-color: rgb(106, 133, 52);
+    }
+
+.box-3 {
+    height: 120px;
+    width: 120px;
+    background-color: salmon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    gap: 15px;
+}
+.box-3:hover{
+    background-color:rgb(247, 102, 86);
+    }
+.arrow-box :hover {
+    border: 1px solid #fff;
+}
+
+
+/* flex section */
+/* .box{
+margin-top: 30px;
+width: 100%;
+background-color: antiquewhite;
+height: 400px;
+overflow-y: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+} */
+/* .child{
+width: 300px;
+background-color: blue;
+height: 300px;
+border: 1px solid black;
+} */

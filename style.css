@@ -95,11 +95,8 @@ justify-content: center;
 }
 
 .button {
-    width: 150px;
-    height: 40px;
-    align-items: center;
+    padding: 10px 26px;
     font-size: 15px;
-    text-align: center;
     font-weight: 600;
     color: rgb(51, 51, 129);
     background-color: rgb(230, 191, 34);
@@ -167,12 +164,13 @@ justify-content: center;
 }
 
 .img-container {
+    width: 100%;
     background-image: url(/Assest/edu.jpg);
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    position: absolute;
 }
 
 .heading {
@@ -203,15 +201,15 @@ justify-content: center;
 }
 
 .last-container {
-    height: 200px;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    width: 70%;
+    padding: 20px;
     background-color: rgb(18, 18, 67);
     border-radius: 10px;
-    margin: -120px 200px 0 200px;
-    display: flex;
-    justify-content: center;
-    position: absolute;
+    /* margin: -120px 200px 0 200px; */
+    position: relative;
+    margin: 0px 150px;
 }
 
 .last-heading {
@@ -222,13 +220,18 @@ justify-content: center;
 }
 
 .box {
-    width: 70%;
-    height: auto;
     display: flex;
+    width: 70%;
     justify-content: center;
     align-items: center;
     gap: 30px;
     color: #ffff;
+}
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
 }
 
 .box-1 {
@@ -237,11 +240,11 @@ justify-content: center;
     background-color: rgb(126, 126, 240);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     border-radius: 5%;
-    padding: 10px 0 10px 0;
     text-align: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .box-1:hover {
@@ -258,11 +261,11 @@ justify-content: center;
     background-color: rgb(145, 176, 81);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     border-radius: 5%;
-    padding: 10px 0 10px 0;
     text-align: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .box-2:hover {
@@ -275,11 +278,11 @@ justify-content: center;
     background-color: salmon;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     border-radius: 5%;
-    padding: 10px 0 10px 0;
     text-align: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .box-3:hover {
@@ -296,7 +299,9 @@ justify-content: center;
     #clock {
         display: none;
     }
-
+.menu{
+    display: none;
+}
 }
 
 /* small screen */
@@ -316,16 +321,52 @@ justify-content: center;
     .nav-blue{
         max-width: 100%;
     }
+    .list{
+        display: none;
+    }
+    .last-container{
+        display: flex;
+    min-width: 100px;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        /* height: 100%; */
+    }
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
 }
+@media (min-width: 941px) {
+    .last-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        min-width: 100px;
+        align-items: center;
+    }
+}
+
 @media (max-width:1458px){
     #contact-section{
         display: none;
     }
 }
-@media (max-width:940px){
-    #button {
+@media (max-width:1460px){
+    .button {
         display: none;
     }
+    
+}
+@media (min-width:1459px){
+    #btn {
+        display: none;
+    }
+
+    
 }
 /* flex section */
 /* .box{

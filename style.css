@@ -42,6 +42,9 @@
 .inner {
     height: 15px;
     width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: small;
     background-color: rgb(236, 204, 77);
     border-radius: 50px;
@@ -165,7 +168,7 @@ justify-content: center;
 
 .img-container {
     width: 100%;
-    background-image: url(/Assest/edu.jpg);
+    background-image: url(./Assest/edu.jpg);
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
